@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>УЕСТ ЕКИП 22</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .graffiti-text {
+            font-family: 'Bebas Neue', cursive;
+            text-shadow: 3px 3px 0px #000, 
+                       -1px -1px 0px #000,  
+                        1px -1px 0px #000,
+                       -1px  1px 0px #000,
+                        1px  1px 0px #000;
+        }
+        .gangsta-font {
+            font-family: 'Oswald', sans-serif;
+        }
+        @keyframes pulse-gold {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .gold-pulse {
+            animation: pulse-gold 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-black text-white gangsta-font antialiased">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
