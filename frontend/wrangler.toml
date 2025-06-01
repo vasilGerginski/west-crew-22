@@ -1,0 +1,6 @@
+name = "west-crew-22"
+main = "dist/index.html"
+compatibility_date = "2023-10-30"
+
+[site]
+bucket = "dist"
