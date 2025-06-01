@@ -25,12 +25,34 @@ npm run build
 
 ## Deployment
 
-This app is configured for deployment on Cloudflare Pages:
-
-1. Connect your GitHub repository to Cloudflare Pages
-2. Set build command: `npm run build`
-3. Set output directory: `dist`
+### Method 1: GitHub Integration (Recommended)
+1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com/) → Pages → "Create a project"
+2. Connect GitHub and select this repository
+3. Configure build settings:
+   - **Build command**: `npm run build`
+   - **Build output directory**: `dist`
+   - **Root directory**: `frontend`
 4. Deploy!
+
+### Method 2: Wrangler CLI
+```bash
+# Build the app
+npm run build
+
+# Deploy with Wrangler (if available)
+npx wrangler pages deploy dist --project-name west-crew-22
+```
+
+### Method 3: Manual Upload
+1. Run `npm run build` to create the `dist` folder
+2. Zip the contents of the `dist` folder
+3. Go to Cloudflare Pages → "Upload assets"
+4. Upload the zip file
+
+### Build Output
+- **JS Bundle**: ~124KB (45KB gzipped)
+- **CSS Bundle**: ~21KB (4KB gzipped)
+- **Total**: ~145KB minified
 
 ## Tech Stack
 
